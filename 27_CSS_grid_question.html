@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main-box{
+            display: grid;
+            border: 1px solid red;
+            width: 500px;
+            height: 600px;
+            grid-template-columns: repeat(4, auto);
+            grid-template-rows: repeat(4, auto);
+            margin: auto;
+        }
+        .mini-box{
+            border: 1px solid black;
+        }
+        .box1{
+            grid-column: 1 / span 4;
+            grid-row: 1 / span 2;
+        }
+        .box2{
+            grid-column: 1 / span 1;
+            grid-row: 3 / span 2;
+        }
+        .box3{
+            grid-column: 2 / span 3;
+            grid-row: 3 / span 2;
+        }
+        .box4{
+            grid-column: 1 / span 4;
+            grid-row: 5 / span 2;
+        }
+        h4{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="main-box" >
+        <div class="mini-box box1"><h4>Header</h4></div>
+        <div class="mini-box box2"><h4>Side</h4></div>
+        <div class="mini-box box3"><h4>Content</h4></div>
+        <div class="mini-box box4"><h4>Footer</h4></div>
+    </div>
+</body>
+</html>
