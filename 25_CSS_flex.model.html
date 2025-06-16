@@ -7,11 +7,22 @@
     <style>
         #main-box{
             display: flex;
+            height: 800px;
             border: 2px solid red;
             /* 자식윈도우에 대한 배치방향: row column */
             flex-direction: row;
-            /* 각 자식윈도우의 간격설정하기 */
-            justify-content: space-between;
+            
+            /* 각 자식윈도우의 수평간격설정 */
+            justify-content: space-evenly;
+            /* 교차축의 정렬 : 수직 
+               flex-start => top
+               flext-start => bottom
+            */
+            /* align-items: flex-start; */
+
+            /* 셋트 옵션 */
+            flex-wrap: wrap;
+            align-content: center;
         }
         .mini-box{
             width: 100px;
